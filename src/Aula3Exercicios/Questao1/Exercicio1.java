@@ -7,15 +7,15 @@ public class Exercicio1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Insira o turno que você estuda:\nM - Matutino, V - Vespertino, N - Noturno");
-        String response = sc.next();
+        char response = sc.next().charAt(0);
 
-        if (response.equals("M")){
+        if (response == 'M'){
             System.out.println("Bom dia!");
         }
-        else if (response.equals("V")){
+        else if (response == 'V'){
             System.out.println("Boa tarde!");
         }
-        else if (response.equals("N")){
+        else if (response == 'N'){
             System.out.println("Boa noite!");
         }
         else{
